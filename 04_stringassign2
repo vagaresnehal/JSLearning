@@ -1,0 +1,20 @@
+
+function stringTenplateAssig(){
+    console.log("============================Function with no Argument and no Return value================================");
+    var myDreamCompany ="Wipro PVT.LTD";
+    console.log("My Dream Company Is:",myDreamCompany);
+    console.log("=======================================Create Three Variables==========================================");
+    var hobby1 = "Watching Motivational Vedios";
+    var hobby2 = "Playing Games";
+    var hobby3 = "Dancing";
+    console.log("My Hobbies are:",hobby1,hobby2,hobby3);
+    console.log("Total no of charactor in hobby1 is:",hobby1.length);
+    console.log("Total no of charactor in hobby2 is:",hobby2.length);
+    console.log("Total no of charactor in hobby1 is:",hobby3.length);
+    console.log("---------------------------Sum of Charactor in Three Variables is-----------------");
+    console.log("Total Charactor in three variables is:",hobby1.length+hobby2.length+hobby3.length);
+
+}
+stringTenplateAssig();
+
+
