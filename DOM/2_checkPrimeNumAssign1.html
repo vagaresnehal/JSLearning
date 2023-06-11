@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <br>
+    <button type="button" id="button"> My Hobbies </button>
+
+    <br>
+    <br>
+    <br>
+    <button type="button" id="button1"> Check Even Or ODD </button>
+    <br>
+    <br>
+    <br>
+    <button type="button" id="button3"> Check Prime Or Not </button>
+    <script>
+
+        console.log("************************ Hobbies **************************");
+        const element1 = document.querySelector("#button");
+        element1.addEventListener("click",()=>{
+            const hobbies = prompt("Given My Hobbies....",0);
+            if(hobbies){
+                console.log("1) Reading");
+                console.log("2) Programming");
+                console.log("3) Dancing");
+            }
+        });
+
+        console.log("****************************** Check Even Or Odd ********************");
+        const element2 = document.querySelector("#button1");
+        element2.addEventListener("click",() => {
+            const isPrime = prompt("Please Enter the Numbers....",0);
+            console.log(" The Given Number is : ",isPrime);
+            const result = isPrime%2==0? true:false;
+            console.log("Is Given Number is Even Number : ",result);
+            if (result) {
+                alert("Given Number is Even Number");
+                
+            }
+            else{
+                alert("Given Number is ODD Number");
+            }
+        });
+
+        console.log("******************************** Check Prime Number or Not *********************************");
+
+        const element3 = document.querySelector("#button3");
+        element3.addEventListener("click",()=>{
+            const n = prompt("Enter the Number...",0);
+            console.log(" Given Number is : ",n);
+            function cal(num){
+                for (let index = 2; index < num; index++) {
+                    if (num%index==0) {
+                        return `${num} is not Prime`;
+                        
+                    }
+                    
+                }
+                return `${num} is a Prime Number`;
+            }
+            let result = cal(n)
+            console.log(result);
+
+        });
+
+    </script>
+    
+</body>
+</html>

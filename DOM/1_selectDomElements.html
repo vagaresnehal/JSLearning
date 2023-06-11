@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Excercise time</title>
+</head>
+
+<body>
+    <main>
+        <div id="overview">
+            <h1 id="h1heading">HTML and JavaScript are crucial technologies</h1>
+            <p><b>The web would not work within them...</b></p>
+        </div>
+        <div id="advantages">
+            <ul id="color">
+                <li>Flexible</li>
+                <li id="adv">Available</li>
+                <li>Magical</li>
+            </ul>
+        </div>
+    </main>
+    <script>
+
+        console.log("===== Select Main Heading By selecting element by quarySelector() ===== ");
+        const elementByQuarySelactor = document.querySelector("#h1heading");
+        console.log(elementByQuarySelactor.innerHTML);
+        elementByQuarySelactor.style.color = "Red";
+        elementByQuarySelactor.style.backgroundColor = "pink";
+
+        console.log("======= Select Second Element of Lists using quarySelector =======");
+        const elementsByQuarySelector = document.querySelector("#adv");
+        console.log(elementsByQuarySelector.innerHTML);
+
+        console.log("======== Select The Complete Div element By Quary Selector ===========");
+        const elementByQuary = document.querySelector("#advantages")
+        console.log(elementByQuary.innerHTML);
+
+
+        const elementColor = document.querySelector("#adv");
+        elementColor.style.color = "blue";
+        elementColor.style.backgroundColor = "gold"; 
+
+</script>
+
+</body>
+
+</html>

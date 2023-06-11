@@ -70,6 +70,7 @@ console.log(typeof splitResult);
 var greet1 = "Good Morning My Dear Friends";
 var splitResult1 = greet1.split(" ");
 console.log("After splitting string is:",splitResult1);
+var newResult =splitResult1*2;
 console.log(typeof splitResult1);
 console.log("Total no of words:",splitResult1.length);
 
@@ -80,7 +81,7 @@ console.log(myFriendListResult);
 console.log(myFriendListResult.length);
 console.log(myFriendListResult.length);
 
-var myFriendListResult1 = myFriendList.split(" ,");
+var myFriendListResult1 = myFriendList.split(",");
 console.log(myFriendListResult1.length);
 
 
