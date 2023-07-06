@@ -74,5 +74,3 @@ console.log(`SubArray is : ${subArray}`);
 
 
 
-
-
